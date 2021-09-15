@@ -1,0 +1,24 @@
+.navbar {
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.margin {
+  margin-left: 10px !important;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.end{
+  margin-left: auto !important;
+  margin-right: 5px;
+}
+.avatar{
+  cursor: pointer !important;
+}

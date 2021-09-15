@@ -1,0 +1,13 @@
+.menu {
+  background-color: white;
+  height: calc(100vh - 64px);
+}
+
+.primaryColor {
+  color: var(--color-primary) !important;
+}
+
+.close {
+  display: none;
+}
+

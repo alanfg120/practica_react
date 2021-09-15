@@ -1,0 +1,9 @@
+html { 
+  background-color: #fafafa;
+}
+:root {
+  --color-primary : green;
+  --color-secundary: blue;
+  --animate-duration: 300ms;
+  --animate-delay: 0.9s;
+}
