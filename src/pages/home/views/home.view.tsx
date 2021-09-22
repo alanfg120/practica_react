@@ -12,23 +12,18 @@ import {
 import "./../css/home.css";
 import { LoadinProgress } from "../../../componentes/loading/loadin.componet";
 import { PublicacionesProvider } from "../../publicaciones/state/publicaciones.provaider";
-import { PublicacionesPage } from "../../publicaciones/views/publicaciones.view";
+import { PublicacionesPage } from "../../publicaciones/views/publicaciones/publicaciones.view";
 import { usePublicacion } from "../../publicaciones/hook/publicacion.hook";
 
 export let HomeView = () => {
-  let { path, url } = useRouteMatch();
-
-  const [openDrawer, setOpenDrawer] = useState(true);
-  const openDrawerEven = () => setOpenDrawer(!openDrawer);
-
+  
  
   return (
     <div>
-      <NavBar openDrawer={openDrawerEven} />
+      <NavBar/>
       <div className="container">
-        <DrawerComponet drawer={openDrawer} />
+        <DrawerComponet/>
         <div>
-       
           <Switch>
             <Route path="/home/publicaciones"  component = {()=><PublicacionesPage/>}>
             

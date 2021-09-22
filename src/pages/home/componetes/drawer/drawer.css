@@ -1,6 +1,8 @@
 .menu {
   background-color: white;
   height: calc(100vh - 64px);
+  width: 250px;
+  border-right: solid 1px #e9e9e9;
 }
 
 .primaryColor {
@@ -8,6 +10,7 @@
 }
 
 .close {
-  display: none;
+  transition: 0.5s;
+  display: none !important;
 }
 

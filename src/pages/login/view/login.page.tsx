@@ -4,19 +4,14 @@ import { usePublicacion } from "../../publicaciones/hook/publicacion.hook";
 import { Publicacion } from "../../publicaciones/model/publicacion.model";
 
 export let LoginPage = () => {
+  const { state, addPublicacion } = usePublicacion();
 
-  const { state ,addPublicacion} = usePublicacion();
+  console.log("login Page");
 
-  console.log('login Page');
-  
   return (
     <div>
-      {
-          state.publicaciones.map(p=><h3>{p.titulo}</h3>)
-      }
-
-      <button onClick= {()=>addPublicacion(new Publicacion('nueva'))}>ADD</button>
-      <Link to='/home'>Home</Link>
+       <h1>Login</h1>
+      <Link to="/home">Home</Link>
     </div>
   );
 };

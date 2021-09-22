@@ -5,18 +5,13 @@ import "./drawer.css";
 import { Home, LocalMall, Message, List as ListIcon } from "@material-ui/icons";
 import { BrowserRouter, Link, NavLink } from "react-router-dom";
 
-export let DrawerComponet = ({ drawer }: any) => {
+export let DrawerComponet = () => {
   /* function ListItemLink(props: ListItemProps<"a", { button?: true }>) {
     return <ListItem button component="a" {...props} />;
   }  */
   return (
     <div
-      className={
-        "menu " +
-        (drawer
-          ? "animate__animated animate__slideInLeft"
-          : "animate__animated animate__slideOutLeft")
-      }
+      className="menu"
     >
       <List component="nav" aria-label="main mailbox folders">
         <ListItem button component={Link} to="/home">

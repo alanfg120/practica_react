@@ -12,7 +12,7 @@ import {
 } from "@material-ui/core";
 import { SettingsOutlined, Menu as MenuIcon } from "@material-ui/icons";
 
-export let NavBar = ({ openDrawer }: any) => {
+export let NavBar = () => {
   const [menuSetting, setMenuSetting] = useState<null | HTMLElement>(null);
 
   const openMenuSetting = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -22,11 +22,8 @@ export let NavBar = ({ openDrawer }: any) => {
   const closeMenuSetting = () => setMenuSetting(null);
 
   return (
-    <AppBar position="static" color="inherit" elevation={0}>
+    <AppBar className="navbar" position="static" color="inherit" elevation={0}>
       <Toolbar variant="dense" disableGutters={true}>
-        <IconButton color="inherit" onClick={openDrawer}>
-          <MenuIcon />
-        </IconButton>
         <img src={logo} className="logo" alt="Hola" />
         <Typography variant="h6" className="margin">
           Yo Compro Acacías

@@ -1,0 +1,6 @@
+.publicaciones {
+  padding: 20px 100px 0 100px;
+  grid-column: 2 / 3 !important;
+  height: calc(100vh - 61px);
+  overflow-y: scroll;
+}

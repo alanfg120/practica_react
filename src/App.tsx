@@ -20,12 +20,8 @@ function App() {
       <ThemeProvider theme={theme}>
         <Router>
           <Switch>
-            <Route path="/home" render={()=><HomeView/>}>
-          
-            </Route>
-            <Route exact path="/">
-              <LoginPage />
-            </Route>
+            <Route path="/home" render={()=><HomeView/>}/>
+            <Route exact path="/" render={()=><LoginPage/>}/>      
             <Route render={() => <h1>Hola</h1>} />
           </Switch>
         </Router>
